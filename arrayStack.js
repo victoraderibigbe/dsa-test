@@ -51,10 +51,10 @@ stack.push(10);
 stack.push(20);
 stack.push(30);
 
-stack.print(); // Output: 30 20 10
+stack.print();
 
-console.log(stack.pop()); // Output: 30
-stack.print(); // Output: 20 10
+console.log(stack.pop());
+stack.print();
 
-console.log(stack.peekLast()); // Output: 20
-console.log(stack.peekFirst()); // Output: 10
+console.log(stack.peekLast());
+console.log(stack.peekFirst());
