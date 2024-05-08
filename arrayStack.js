@@ -27,7 +27,7 @@ class Stack {
     if (this.isEmpty()) {
       return "Stack is empty";
     }
-    return this.items[this.length - 1];
+    return this.items[this.length() - 1];
   }
 
   peekFirst() {
@@ -42,19 +42,19 @@ class Stack {
       console.log("Stack is empty");
       return;
     }
-    console.log(...this.items);
+    console.log(this.items);
   }
 }
 
 const stack = new Stack();
-stack.push(10);
-stack.push(20);
-stack.push(30);
+stack.push("Tunde");
+stack.push("Segun");
+stack.push("Ogedengbe");
 
-stack.print();
+stack.print(); // Print the whole stack
 
-console.log(stack.pop());
-stack.print();
+console.log(stack.pop()); // Last item to delete
+stack.print(); // Print after removing last item
 
-console.log(stack.peekLast());
-console.log(stack.peekFirst());
+console.log(stack.peekLast()); // New last item
+console.log(stack.peekFirst()); // First item on the stack

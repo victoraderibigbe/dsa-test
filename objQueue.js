@@ -53,9 +53,9 @@ class Queue {
 
 const queue = new Queue(5);
 
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
+queue.enqueue("Sola");
+queue.enqueue("Dada");
+queue.enqueue("Tolu");
 queue.print();
 
 console.log(queue.dequeue());
